@@ -11,7 +11,7 @@ body {
 	display: flex;
 	min-width: 600px;
 	margin: 0;
-	background-color: #43a047;
+	background-color: #f8b1e9;
 	color: rgba(255, 255, 255, 0.8);
 	font-family: 'PT Sans', sans-serif;
 }
@@ -21,7 +21,7 @@ body {
 	min-width: 300px;
 	position: relative;
 	padding: 2em;
-	background-color: #43a047;
+	background-color: #f8b1e9;
 	font-size: 15px;
 }
 
@@ -261,7 +261,7 @@ pre {
 }
 
 .level-marker.solved {
-	background-color: #228b24;
+	background-color: #f786de;
 }
 
 #level-indicator,
@@ -344,7 +344,7 @@ pre {
 button {
 	display: inline-block;
 	padding: 0.4em 0.8em;
-	background-color: #d11606;
+	background-color: #f8b1bb;
 	border: none;
 	border-radius: 4px;
 	font-family: 'PT Sans', sans-serif;
@@ -365,7 +365,7 @@ button:active {
 }
 
 button:not(.disabled):hover {
-	background-color: #f12d22;
+	background-color: #f8b1bb;
 }
 
 #next {
@@ -460,7 +460,7 @@ button:not(.disabled):hover {
 #background {
 	z-index: 10;
 	border-radius: 0 0 0 10px;
-	background-color: #1f5768;
+	background-color: #bd45b7;
 }
 
 #canvas {
