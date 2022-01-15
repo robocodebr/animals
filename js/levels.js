@@ -1,5 +1,41 @@
 let levels = [
   {
+    name: 'align-content 3',
+    instructions: '<p>Скористайся комбінацією властивостей <code>flex-direction</code>, щоб розсадити звірят на свої місця.</p>',
+    board: 'rg',
+    classes: {'.animals, #background': 'wrap'},
+    style: {'flex-direction': 'column'},
+    before: ".animals {\n  display: flex;\n  flex-wrap: wrap;\n",
+    after: "}"
+  },
+  {
+    name: 'align-content 3',
+    instructions: '<p>Скористайся комбінацією властивостей <code>flex-direction</code>, щоб розсадити звірят на свої місця.</p>',
+    board: 'gy',
+    classes: {'.animals, #background': 'wrap'},
+    style: {'flex-direction': 'column-reverse'},
+    before: ".animals {\n  display: flex;\n  flex-wrap: wrap;\n",
+    after: "}"
+  },
+  {
+    name: 'align-content 3',
+    instructions: '<p>Скористайся комбінацією властивостей <code>flex-direction</code>, щоб розсадити звірят на свої місця.</p>',
+    board: 'gygg',
+    classes: {'.animals, #background': 'wrap'},
+    style: {'flex-direction': 'column-reverse', 'align-items':'flex-end', 'justify-content': 'center'},
+    before: ".animals {\n  display: flex;\n  flex-wrap: wrap;\n",
+    after: "}"
+  },
+  {
+    name: 'align-content 3',
+    instructions: '<p>Скористайся комбінацією властивостей <code>flex-direction</code>, щоб розсадити звірят на свої місця.</p>',
+    board: 'ry',
+    classes: {'.animals, #background': 'wrap'},
+    style: {'align-items': 'flex-end','flex-direction': 'column-reverse'},
+    before: ".animals {\n  display: flex;\n  flex-wrap: wrap;\n",
+    after: "}"
+  },
+  {
     name: 'justify-content 1',
     instructions: '<p>За допомогою властивості <code>justify-content</code>, яка вирівнює елементи по горизонталі поставте звірят на свої місця</p>',
     board: 'g',
@@ -134,7 +170,16 @@ let levels = [
   },
   {
     name: 'align-self 2',
-    instructions: '<p>Скомбінуй <code>order</code> з <code>align-self</code>, щоб допомогти жабенятам дістатися свого призначення.</p>',
+    instructions: '<p>Скомбінуй <code>order</code> з <code>align-self</code>, щоб допомогти звірятам дістатися свого призначення.</p>',
+    board: 'ygygg',
+    selector: '> .yellow',
+    style: {'align-self': 'flex-end', 'order': '2'},
+    before: ".animals {\n  display: flex;\n  align-items: flex-start;\n}\n\n. {\n",
+    after: "}"
+  },
+  {
+    name: 'align-self 2',
+    instructions: '<p>Скомбінуй <code>order</code> з <code>align-self</code>, щоб допомогти звірятам дістатися свого призначення.</p>',
     board: 'ygygg',
     selector: '> .yellow',
     style: {'align-self': 'flex-end', 'order': '2'},
@@ -147,6 +192,24 @@ let levels = [
     board: 'ygggggr',
     style: {'flex-wrap': 'wrap'},
     before: ".animals {\n  display: flex;\n",
+    after: "}"
+  },
+  {
+    name: 'align-self 2',
+    instructions: '<p>Скомбінуй <code>order</code> з <code>align-self</code>, щоб допомогти звірятам дістатися свого призначення.</p>',
+    board: 'ygygg',
+    selector: '> .green',
+    style: {'align-self': 'flex-end', 'order': '-1'},
+    before: ".animals {\n  display: flex;\n  align-items: flex-start;\n}\n\n. {\n",
+    after: "}"
+  },
+  {
+    name: 'align-self 2',
+    instructions: '<p>Скомбінуй <code>order</code> з <code>align-self</code>, щоб допомогти звірятам дістатися свого призначення.</p>',
+    board: 'ygygg',
+    selector: '> .green',
+    style: {'align-self': 'flex-start', 'order': '2'},
+    before: ".animals {\n  display: flex;\n  align-items: flex-start;\n}\n\n. {\n",
     after: "}"
   },
   {
@@ -191,7 +254,9 @@ let levels = [
     style: {'flex-direction': 'column-reverse', 'align-content': 'center'},
     before: ".animals {\n  display: flex;\n  flex-wrap: wrap;\n",
     after: "}"
-  }
+  },
+
+ 
 ];
 
 let levelWin = {
